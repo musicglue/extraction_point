@@ -2,7 +2,6 @@ module ExtractionPoint
   class Writer
 
     def self.write!(payload, options)
-      Rails.logger.info payload
       File.open(options[:output_file], 'w+') do |f|
         f.puts "module #{options[:output_namespace].to_s.classify}"
         f.puts "  module RouteHelpers\n"

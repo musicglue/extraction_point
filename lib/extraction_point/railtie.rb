@@ -9,6 +9,10 @@ module ExtractionPoint
       ExtractionPoint::Railtie.boot!(app)
     end
 
+    rake_tasks do
+      load "tasks/extraction_point_tasks.rake"
+    end
+
     protected
 
       def boot!(app)

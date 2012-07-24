@@ -9,7 +9,6 @@ module ExtractionPoint
     @keys = routes.named_routes.routes.keys
     @exportable = []
     compile_methods
-    Rails.logger.info @exportable
   end
 
   def compile_methods

@@ -10,4 +10,5 @@ module ExtractionPoint
     parser = Parser.new(routes, options)
     Writer.write!(parser.exportable, options)
   end
+  
 end
