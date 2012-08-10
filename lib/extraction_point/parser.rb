@@ -51,7 +51,7 @@ module ExtractionPoint
     end
 
     def strip_format(path)
-      path.gsub("(.:format)", "")
+      path.spec.to_s.gsub("(.:format)", "")
     end
 
   end
